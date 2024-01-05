@@ -39,7 +39,7 @@ export const Scene = ({ mainColor, path, ...props }) => {
           autoRotateSpeed={0.5}
         />
         <primitive object={scene} scale={ratioScale} />
-        <ambientLight intensity={0.1} color="pink" />
+        <ambientLight intensity={0.1} color="red" />
         <AccumulativeShadows
           frames={100}
           alphaTest={0.9}
@@ -107,6 +107,4 @@ export const Scene = ({ mainColor, path, ...props }) => {
   );
 };
 
-useGLTF.preload("/models/cybertruck_scene.glb");
 useGLTF.preload("/models/model3_scene.glb");
-useGLTF.preload("/models/semi_scene.glb");
